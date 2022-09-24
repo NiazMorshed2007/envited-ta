@@ -1,6 +1,4 @@
-import moment from "moment/moment";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import rocket from "../assets/rocket.png";
 
@@ -37,6 +35,7 @@ const Create = (props) => {
     setEvent(data);
     navigate("/event");
   };
+
   return (
     <div className="create py-12 px-[10%] flex">
       <div>
