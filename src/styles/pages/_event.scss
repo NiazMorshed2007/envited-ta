@@ -1,0 +1,19 @@
+.event {
+    .box {
+        @apply flex items-center justify-between mb-8 cursor-pointer;
+        .con {
+            @apply flex items-center gap-5;
+            .icon-box {
+                @apply w-[36px] h-[36px] text-lg flex items-center justify-center p-[2px] border border-slate-200/70 rounded-md shadow-sm bg-white;
+            }
+            .content {
+                h2 {
+                    @apply font-bold text-[15px];
+                }
+                p {
+                    @apply text-[12.99px] text-secondary;
+                }
+            }
+        }
+    }
+}

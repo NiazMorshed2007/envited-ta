@@ -1,0 +1,22 @@
+.create {
+    background-image: $gradient;
+
+    form {
+        label {
+            @apply w-full sm:w-auto;
+            p {
+                @apply text-[12px] font-medium;
+            }
+            input {
+                @apply outline-none p-2 text-[12px] w-full sm:w-[405px] mt-1 rounded-md border border-slate-200/70;
+            }
+        }
+        .date-time {
+            label {
+                input {
+                    @apply w-full sm:w-[190px]
+                }
+            }
+        }
+    }
+}

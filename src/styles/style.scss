@@ -4,9 +4,28 @@
 @tailwind utilities;
 
 
+@import "./colors";
+@import "./fonts";
+@import "./vars";
+@import "./pages/landing";
+@import "./pages/event";
+@import "./pages/create";
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: $monrope;
+    @apply text-priamry;
+    overflow-x: hidden;
+    // ensuring all buttons style in app
+    button {
+        @apply flex items-center text-white justify-center self-end p-[16px] md:w-[320px] w-[210px] h-[55px];
+        background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+        border-radius: 10px;
+    }
 }
